@@ -1,0 +1,54 @@
+---
+layout: page
+title: Projects
+---
+
+
+<div class="project-grid">
+  {% assign project_index = site.projects | sort:"order" %}
+  {% for project in project_index %}
+  <div class="project-list">
+      <div class="project-image"> <a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" ></a></div>
+      <div class="project-title"> <a href="{{project.url}}">{{project.title}}</a> </div>
+      <div class="project-description"> {{project.description}}
+       </div>
+      
+  </div>
+  {% endfor %}
+</div>
+
+
+<!-- {% for node in project_index %}
+  <li><a href="{{node.url}}">{{node.title}}</a></li>
+{% endfor %} -->
+
+
+
+<!-- <div class="project-grid">
+
+  <div class="project" id="project1">
+    <div class="project-image"> <img src="images/thumbnail/screenshot.png" alt="image" width="100%"></div>
+   <div class="project-title"> <a href="/project1.html ">project01</a> </div>
+   <div class="project-excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+  <div class="project" id="project1">
+    <div class="project-image"> <img src="images/thumbnail/screenshot.png" alt="image" width="100%"></div>
+   <div class="project-title"> <a href="/project1.html ">project01</a> </div>
+   <div class="project-excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+  <div class="project" id="project1">
+    <div class="project-image"> <img src="images/thumbnail/screenshot.png" alt="image" width="100%"></div>
+   <div class="project-title"> <a href="/project1.html ">project01</a> </div>
+   <div class="project-excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+  
+</div> -->
+
+
+
+

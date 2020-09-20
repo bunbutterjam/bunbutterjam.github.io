@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+
+<div class="project-grid">
+  {% assign project_index = site.projects | sort:"order" %}
+  {% for project in project_index %}
+  <div class="project-list">
+      <div class="project-image"> <a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" ></a></div>
+      <div class="project-title"> <a href="{{project.url}}">{{project.title}}</a> </div>
+      <div class="project-description"> {{project.description}}
+       </div>
+      
+  </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+<!-- <section class="posts">
+    <ul>
+      {% for post in site.posts %}
+      <li class="post-container" >
+         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }} </time>
+      </li>
+      {% endfor %}
+    </ul>
+</section> -->

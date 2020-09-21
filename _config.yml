@@ -15,9 +15,7 @@ author:
 permalink: pretty
 
 baseurl: ""
-# highlighter: rouge
-lsi: BOOL
-livereload: BOOL
+highlighter: rouge
 
 
 

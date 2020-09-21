@@ -6,6 +6,7 @@ gem 'jekyll-sitemap'
 gem "kramdown-parser-gfm"
 gem "jekyll-feed"
 
+
 # group :jekyll_plugins do
 #     
 #     gem "jekyll-seo-tag"

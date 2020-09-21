@@ -1,0 +1,79 @@
+site: Swapnesh Samaiya
+url: http://samaiya.in
+title: Swapnesh Samaiya 
+description: Game Design & Research
+twitter:
+  username: banbutterjam
+  card: summary
+  creator: #yourusername
+author: 
+  twitter: 
+  name: #yourusername
+  avatar:
+  email: samaiya.swapnesh@gmail.com
+  url: #yoururl
+permalink: pretty
+
+baseurl: ""
+github: [metadata]
+highlighter: none
+
+
+exclude:
+  - .jekyll-cache
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+  - jekyll-feed
+  - github-pages
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug  
+  projects:
+    output: true
+    permalink: /projects/:name
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+      
+
+
+

@@ -16,6 +16,10 @@ permalink: pretty
 
 baseurl: ""
 # highlighter: rouge
+lsi: BOOL
+livereload: BOOL
+
+
 
 
 exclude:

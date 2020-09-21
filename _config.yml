@@ -15,7 +15,6 @@ author:
 permalink: pretty
 
 baseurl: ""
-github: [metadata]
 highlighter: none
 
 
@@ -35,7 +34,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap  
   - jekyll-feed
-  - github-pages
 
 collections:
   pages:

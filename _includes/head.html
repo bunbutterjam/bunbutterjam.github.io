@@ -1,9 +1,6 @@
-<head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <!-- Font awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111496238-1"></script>
@@ -16,7 +13,7 @@
 
 <!-- Image modal  -->
 <link rel="stylesheet" href="/assets/css/lightbox.css">
-<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+<script src="/assets/js/lightbox.js"></script>
 
 
   {% seo title=false %}
@@ -40,7 +37,7 @@
       {% endunless %}
     </title>
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127804;</text></svg>">
+    <link rel="icon" href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22> &#127804; </text></svg>">
   <!-- <link rel="shortcut icon" href="&#127804;"> -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
   <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
@@ -54,6 +51,3 @@
     {{ include_to_scssify | scssify }}
 
     </style>
-  
-
-</head>

@@ -56,12 +56,20 @@
 	// background: black;
 }
 
+
+nav ul li {
+
+	display: inline;
+}
+
 // .head-navigation ul:hover
 // {
 // 	background: black;
 // }
 
 // FOOTER 
+
+
 
 .footer-container {
 
@@ -118,8 +126,8 @@
 
 	float: left;
 	padding-left: 12px;
-	opacity: .4;
-	font-size: 18px;
+	opacity: .5;
+	font-size: 16px;
 	// background: red;
 	// align-items: center;
 
@@ -203,9 +211,6 @@ body {
 }
 
 
-
-
-
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -260,7 +265,7 @@ nav a.active {
 
 a {
 	color: #000;
-	text-decoration-skip-ink: auto;
+	// text-decoration-skip-ink: auto;
 	text-decoration: none;
 }
 

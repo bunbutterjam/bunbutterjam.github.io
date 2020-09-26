@@ -456,7 +456,7 @@ figcaption {
 }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 906px) {
 	header li {
 		display: inline-flex;
 		margin-right: 1rem;
@@ -480,27 +480,49 @@ figcaption {
 		margin-top: 0.5rem;
 	}
 
+
+
+main {
+	max-width: 90%;
+}
+
+.head-container {
+	max-width: 90%;
+}
+
+.footer-container {
+	max-width: 90%;
+}
+
+
+}
+
+@media screen and (max-width: 370px) {
+
+	.head-container {
+		height: auto;
+	}
+
+	.head-title {
+		margin-bottom: 10px;
+	}
+
+	.footer-container {
+
+		height: auto;
+	}
+	.footer-text {
+		margin-top: 6px;
+	}
+
+	.footer-icons {
+		margin-top: 6px;
+		float: left;
+	}
 	
-.project-grid {
 
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-	grid-gap: 2rem;
-
-}
-
-}
-
-@media screen and (max-width: 490px) {
-
-	.head-icons {
-
-		display: none;
+	.head-container {
+		max-width: 90%;
+		border: none;
 	}
-
-	.footer-icon {
-
-		display: none;
-	}
-
 }

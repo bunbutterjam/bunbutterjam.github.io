@@ -2,7 +2,7 @@ site: Swapnesh Samaiya
 url: https://samaiya.in
 title: Swapnesh Samaiya 
 type: Personal website
-description: Game Design & Research
+description: Game Designer & Researcher
 # image:
 #   path: /assets/images/about_1.jpg
 twitter:
@@ -15,7 +15,18 @@ author:
   avatar: /assets/images/about_1.jpg
   email: samaiya.swapnesh@gmail.com
   url: https://samaiya.in
+
+social:
+  name: 
+  links:
+    - https://twitter.com/banbutterjam
+    - https://www.facebook.com/swapnesh.samaiya/
+    - https://bunbutterjam.tumblr.com/
+    - https://github.com/bunbutterjam
+
 permalink: pretty
+
+
 
 baseurl: ""
 highlighter: rouge

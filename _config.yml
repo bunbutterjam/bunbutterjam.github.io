@@ -1,17 +1,19 @@
 site: Swapnesh Samaiya
-url: https://bunbutterjam.github.io/
+url: https://samaiya.in
 title: Swapnesh Samaiya 
+type: Personal website
 description: Game Design & Research
+image: /assets/images/about_1.jpg
 twitter:
   username: banbutterjam
-  card: summary
-  creator: #yourusername
+  card: Game Design & Research
+  creator: Swapnesh Samaiya
 author: 
-  twitter: 
-  name: #yourusername
-  avatar:
+  twitter: banbutterjam
+  name: Swapnesh Samaiya
+  avatar: /assets/images/about_1.jpg
   email: samaiya.swapnesh@gmail.com
-  url: #yoururl
+  url: https://samaiya.in
 permalink: pretty
 
 baseurl: ""

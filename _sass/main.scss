@@ -119,6 +119,8 @@ nav ul li {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 	grid-gap: 2rem;
+	// width: 60vw;
+	// height: 100vh;
 }
 
 .project-list {
@@ -260,6 +262,7 @@ pre {
 
 img {
 	max-width: 100%;
+	width: 100%;
 }
 
 hr {
@@ -405,6 +408,11 @@ figcaption {
 		margin-top: 0.5rem;
 	}
 
+
+	// .project-grid {
+	// 	grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+	// }
+
 main {
 	max-width: 90%;
 }
@@ -437,4 +445,12 @@ main {
 		max-width: 90%;
 		border: none;
 	}
+}
+
+@media screen and (min-width: 1866px) {
+
+	.project-grid {
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	}
+
 }

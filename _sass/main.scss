@@ -42,9 +42,10 @@
 }
 
 .head-title:hover {
-	font-weight: bold
+	// font-weight: bold
 	// font-size: larger;
 	// background: black;
+	color: grey;
 }
 
 nav ul li {
@@ -128,14 +129,13 @@ nav ul li {
 }
 
 .project-list:hover {
-	// transform: scale(1.02);
-	color: black;
-	font-weight: 500;
+	// font-weight: 500;
 	.project-image {
 		opacity: 0.8;
 	}
 	.project-title:hover {
 		text-decoration: underline;
+
 	}
 }
 

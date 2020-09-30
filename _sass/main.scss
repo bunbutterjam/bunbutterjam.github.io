@@ -390,6 +390,12 @@ figcaption {
 	font-size: smaller;
 }
 
+
+.about {
+
+	width: 60%;
+}
+
 @media screen and (max-width: 906px) {
 	header li {
 		display: inline-flex;
@@ -424,6 +430,12 @@ main {
 .footer-container {
 	max-width: 90%;
 }
+
+.about {
+
+	width: 100%;
+}
+
 }
 
 @media screen and (max-width: 370px) {
@@ -446,6 +458,10 @@ main {
 	.head-container {
 		max-width: 90%;
 		border: none;
+	}
+	.about {
+
+		width: 100%;
 	}
 }
 

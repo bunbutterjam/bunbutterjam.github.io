@@ -428,8 +428,21 @@ main {
 .head-container {
 	max-width: 90%;
 }
+// .head-title {
+// 	margin-bottom: 10px;
+// }
+
+nav ul li {
+	display: inline;
+	padding-inline-start: 0em;
+	padding-right: 1rem;
+}
+
 .footer-container {
 	max-width: 90%;
+}
+.footer-text {
+	margin-top: 10px;
 }
 
 .about {
@@ -459,6 +472,11 @@ main {
 	.head-container {
 		max-width: 90%;
 		border: none;
+	}
+	nav ul li {
+		display: inline;
+		padding-inline-start: 0em;
+		padding-right: 1rem;
 	}
 	.about {
 		width: 100%;

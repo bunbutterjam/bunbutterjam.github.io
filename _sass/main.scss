@@ -33,7 +33,7 @@
 
 .head-title {
 	float: left;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	// background: lightgreen;
 	// opacity: 0.6;
@@ -147,8 +147,8 @@ nav ul li {
 }
 
 .project-description {
-	font-size: 16px;
-	font-weight: normal;
+	font-size: 14px;
+	// font-weight: normal;
 	// padding-bottom: var(--padding);
 	color: rgba(68, 68, 68, 0.9);
 	// color: rgba(0, 0, 0, 0.342);
@@ -221,6 +221,7 @@ pre {
 
 .post p {
 	margin: .5rem 0;
+	font-size: 16px;
 }
 
 .post h1,

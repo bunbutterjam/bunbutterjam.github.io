@@ -1,10 +1,11 @@
 links:
-- title: projects
-  url: /
-- title: writing
-  url: /writing
 - title: about
   url: /about
+- title: projects
+  url: /
+- title: words
+  url: /words
+
 # - title: Play
 #   url: /play
 # - title: Search

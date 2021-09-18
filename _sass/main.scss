@@ -211,9 +211,10 @@ nav a.active {
 //BODY 
 
 a {
-	color: #000;
+	color: rgb(255, 196, 1);
 	// text-decoration-skip-ink: auto;
 	text-decoration: none;
+	text-decoration: underline;
 }
 
 pre {

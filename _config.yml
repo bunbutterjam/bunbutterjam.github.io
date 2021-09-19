@@ -32,10 +32,15 @@ baseurl: ""
 highlighter: rouge
 
 
-
-
 exclude:
-  - .jekyll-cache
+- .ruby-gemset
+- .ruby-version
+- Gemfile
+- Gemfile.lock
+- Makefile
+- README.md
+- vendor/
+- .jekyll-cache
   
 compress_html:
   clippings: all

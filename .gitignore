@@ -7,3 +7,4 @@ tmp
 .git
 _config.yml
 _site
+.bundle/

@@ -86,8 +86,8 @@ nav ul li {
 }
 
 .footer-text:hover {
-	background: black;
-	color: white;
+
+	color: black;
 }
 
 .footer-icons {
@@ -189,20 +189,20 @@ header {
 	margin: 0rem;
 }
 
-header a {
-	text-decoration: none;
-}
+// header a {
+// 	text-decoration: none;
+// }
 
-header li {
-	margin-bottom: .2rem;
-	// text-align: right;
-	margin-right: 2rem;
-	font-size: 1rem;
-}
+// header li {
+// 	margin-bottom: .2rem;
+// 	// text-align: right;
+// 	margin-right: 2rem;
+// 	font-size: 1rem;
+// }
 
-header li:hover {
-	text-decoration: underline;
-}
+// header li:hover {
+// 	text-decoration: underline;
+// }
 
 nav a.active {
 	font-weight: bold;
@@ -216,69 +216,69 @@ a {
 	text-decoration: none;
 }
 
-pre {
-	margin: .5rem 0;
-	padding: .5rem;
-}
+// pre {
+// 	margin: .5rem 0;
+// 	padding: .5rem;
+// }
 
-.post p {
-	margin: .5rem 0;
-	font-size: 16px;
-}
+// .post p {
+// 	margin: .5rem 0;
+// 	font-size: 16px;
+// }
 
-.post h1,
-.post h2,
-.post h3,
-.post h4 {
-	margin: 1rem 0;
-}
+// .post h1,
+// .post h2,
+// .post h3,
+// .post h4 {
+// 	margin: 1rem 0;
+// }
 
-.post h2:first-child,
-.project h2:first-child,
-.photo h2:first-child {
-	margin-top: 0;
-}
+// .post h2:first-child,
+// .project h2:first-child,
+// .photo h2:first-child {
+// 	margin-top: 0;
+// }
 
-.meta {
-	margin: 2rem 0;
-}
+// .meta {
+// 	margin: 2rem 0;
+// }
 
-code,
-pre {
-	background: rgb(236, 237, 238);
-}
+// code,
+// pre {
+// 	background: rgb(236, 237, 238);
+// }
 
-code {
-	padding: .1rem;
-}
+// code {
+// 	padding: .1rem;
+// }
 
-pre code {
-	border: none;
-}
+// pre code {
+// 	border: none;
+// }
 
-pre {
-	padding: 1rem;
-	overflow-x: auto;
-}
+// pre {
+// 	padding: 1rem;
+// 	overflow-x: auto;
+// }
 
 img {
 	max-width: 100%;
 	width: 100%;
 }
 
-hr {
-	background: #000;
-	height: 1px;
-	border: 0;
-}
+// hr {
+// 	background: #000;
+// 	height: 1px;
+// 	border: 0;
+// }
 // header,section {
 // 	padding:1rem;
 // }
-blockquote {
-	font-style: italic;
-	border-left: 5px solid #ececec;
-	padding-left: 1rem;
-}
+// blockquote {
+// 	font-style: italic;
+// 	border-left: 5px solid #ececec;
+// 	padding-left: 1rem;
+// }
 h1,
 h2,
 h3,

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project-grid
 title: Projects
 ---
 
@@ -10,10 +10,10 @@ title: Projects
   <div class="project-list">
       <div class="project-image"> <a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" ></a>
       </div>
-      <div class="project-title"> <a href="{{project.url}}">{{project.title}}</a> </div>
+      <div class="project-title"> <a href="{{project.url}}">{{project.title}}</a> 
+      </div>
       <div class="project-description"> {{project.description}}
-       </div>
-      
+      </div>
   </div>
   {% endfor %}
 </div>

@@ -1,29 +1,27 @@
 
 <div class="head-container">
 
-    <div class="head-title">
-
-        <a href="{{site.url}}">
-            <h3 class="head-title"> {{site.title}} </h3>
-        </a>
-    </div>
-
     <div class="head-navigation">
         <nav>
             <ul>
                {% for item in site.data.navigation.links %}
-
                <li>
                 <a href="{{site.baseurl}}{{ item.url }}" {% if item.url == page.url %} class="active" 
                 {% endif %}>{{ item.title }}</a> 
                </li>
                {% endfor %}
                <li>
-                <a rel="nofollow" href="https://bunbutterjam.tumblr.com/" target="_blank">images</a>
+                <a rel="nofollow" href="https://bunbutterjam.tumblr.com/" target="_blank">visuals</a>
                </li>
-               
             </ul>
          </nav>
+    </div>
+
+      <div class="head-title">
+
+        <a href="{{site.url}}">
+            <h3 class="head-title"> {{site.title}} </h3>
+        </a>
     </div>
 
  

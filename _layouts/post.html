@@ -6,7 +6,7 @@ layout: default
   <h2>{{ page.title }}</h2>
   {{ content }} <br>
   <span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}
-    </time><br><br><a href="https://twitter.com/banbutterjam" target="_blank">@{{site.twitter.username}}</a><br><br>
+    </time><br><br><a href="https://twitter.com/banbutterjam" target="_blank">@{{site.twitter.username}}</a><br>
     {% for tag in page.tags %}
     <!-- <a href="/tag/{{tag}}" class="post-tag">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}   -->
     <br>

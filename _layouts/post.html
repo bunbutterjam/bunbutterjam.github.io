@@ -4,7 +4,7 @@ layout: default
 
 <section class="post">
   <h2>{{ page.title }}</h2>
-  {{ content }}
+  {{ content }} <br>
   <span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}
     </time><br><br><a href="https://twitter.com/banbutterjam" target="_blank">@{{site.twitter.username}}</a><br><br>
     {% for tag in page.tags %}

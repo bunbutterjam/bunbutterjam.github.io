@@ -1,0 +1,19 @@
+current directory: /Users/swapneshsamaiya/Work/Practice/bunbutterjam/vendor/bundle/ruby/4.0.0/gems/erb-6.0.4/ext/erb/escape
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/swapneshsamaiya/Work/Practice/bunbutterjam/vendor/bundle/ruby/4.0.0/gems/erb-6.0.4/ext/erb/escape
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260513-38005-v8cgax sitelibdir\=./.gem.20260513-38005-v8cgax clean
+
+current directory: /Users/swapneshsamaiya/Work/Practice/bunbutterjam/vendor/bundle/ruby/4.0.0/gems/erb-6.0.4/ext/erb/escape
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260513-38005-v8cgax sitelibdir\=./.gem.20260513-38005-v8cgax
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/swapneshsamaiya/Work/Practice/bunbutterjam/vendor/bundle/ruby/4.0.0/gems/erb-6.0.4/ext/erb/escape
+make -j12 DESTDIR\= sitearchdir\=./.gem.20260513-38005-v8cgax sitelibdir\=./.gem.20260513-38005-v8cgax install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20260513-38005-v8cgax/erb
+
+current directory: /Users/swapneshsamaiya/Work/Practice/bunbutterjam/vendor/bundle/ruby/4.0.0/gems/erb-6.0.4/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260513-38005-v8cgax sitelibdir\=./.gem.20260513-38005-v8cgax clean

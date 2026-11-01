@@ -1,4 +1,4 @@
 ---
 ---
-@use "main";
 :root { --jekyll-build: true; }
+@import "main";

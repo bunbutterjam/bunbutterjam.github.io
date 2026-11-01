@@ -41,6 +41,7 @@ exclude:
 - README.md
 - vendor/
 - .jekyll-cache
+- "**/*.ai"
   
 compress_html:
   clippings: all
@@ -48,10 +49,9 @@ compress_html:
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 plugins:
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap  
   - jekyll-feed
@@ -90,7 +90,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "project-page"
 
       
 

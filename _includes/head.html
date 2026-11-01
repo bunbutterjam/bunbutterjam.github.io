@@ -1,7 +1,6 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I design games, playful Interactions and do design research."/>
 
 <!-- Global site tag (gtag.js) - Google Analytics (Deprecated UA tag removed) -->
 
@@ -24,9 +23,6 @@
           {{ page.title | escape }}
         {% endif %}
         -
-      {% endif %}
-      {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-        Page {{ paginator.page }} of {{ paginator.total_pages }} -
       {% endif %}
       {{ site.title | escape }}
       {% unless page.tag or page.title %}

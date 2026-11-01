@@ -1,11 +1,11 @@
-<div class="carousel-container">
+<div class="carousel-container" tabindex="0" role="group" aria-label="{{ page.title }} images">
   <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
   <div class="carousel-track-wrapper">
     <div class="carousel-track">
       {% for item in page.slider %}
       <div class="carousel-slide {% if forloop.first %}active{% endif %}">
         <a href="{{ item.url }}">
-          <img src="{{ item.url }}" alt="{{ page.title }}">
+          <img src="{{ item.url }}" alt="{{ page.title }}, image {{ forloop.index }} of {{ forloop.length }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
         </a>
       </div>
       {% endfor %}
@@ -13,118 +13,4 @@
   </div>
   <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
 </div>
-
-<script>
-(function() {
-  function initCarousel() {
-    var slides = Array.from(document.querySelectorAll('.carousel-slide'));
-    if (!slides || slides.length === 0) return;
-
-    var currentIndex = 0;
-
-    function showSlide(index) {
-      slides[currentIndex].classList.remove('active');
-      currentIndex = (index + slides.length) % slides.length;
-      slides[currentIndex].classList.add('active');
-    }
-
-    var prevBtn = document.querySelector('.carousel-btn.prev');
-    var nextBtn = document.querySelector('.carousel-btn.next');
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        showSlide(currentIndex - 1);
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        showSlide(currentIndex + 1);
-      });
-    }
-
-    document.addEventListener('keydown', function(e) {
-      var lb = document.getElementById('lb-overlay');
-      if (lb && lb.style.display === 'flex') return;
-      if (e.key === 'ArrowLeft') showSlide(currentIndex - 1);
-      if (e.key === 'ArrowRight') showSlide(currentIndex + 1);
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCarousel);
-  } else {
-    initCarousel();
-  }
-})();
-</script>
-
-<style>
-  .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
-    margin: 1.5rem 0;
-    position: relative;
-  }
-
-  .carousel-track-wrapper {
-    flex: 1;
-    min-width: 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .carousel-track {
-    width: 100%;
-  }
-
-  .carousel-slide {
-    display: none;
-    width: 100%;
-  }
-
-  .carousel-slide.active {
-    display: block;
-    animation: fadeInSlide 0.25s ease-in-out;
-  }
-
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    user-select: none;
-  }
-
-  .carousel-btn {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    color: #666666;
-    font-size: 1.6rem;
-    padding: 0.25rem 0.5rem;
-    cursor: pointer;
-    line-height: 1;
-    flex-shrink: 0;
-    transition: color 0.2s, transform 0.2s;
-    user-select: none;
-  }
-
-  .carousel-btn:hover {
-    color: #000000;
-    transform: scale(1.2);
-  }
-
-  @keyframes fadeInSlide {
-    from { opacity: 0.7; }
-    to { opacity: 1; }
-  }
-</style>
+<script src="/assets/js/carousel.js" defer></script>

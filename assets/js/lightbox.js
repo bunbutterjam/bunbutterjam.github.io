@@ -23,9 +23,11 @@
     overlay.innerHTML =
       '<div id="lb-inner">' +
         '<button id="lb-close" aria-label="Close">&#x2715;</button>' +
-        '<button id="lb-prev" aria-label="Previous">&#x2190;</button>' +
-        '<img id="lb-img" src="" alt="" />' +
-        '<button id="lb-next" aria-label="Next">&#x2192;</button>' +
+        '<div id="lb-img-row">' +
+          '<button id="lb-prev" aria-label="Previous">&#x2190;</button>' +
+          '<img id="lb-img" src="" alt="" />' +
+          '<button id="lb-next" aria-label="Next">&#x2192;</button>' +
+        '</div>' +
         '<p id="lb-caption"></p>' +
       '</div>';
     document.body.appendChild(overlay);
@@ -80,9 +82,11 @@
       closeLightbox();
     });
 
-    // Click on the dark overlay (outside the image box) closes it
+    // Click away from the image and navigation buttons closes the popup
     lbOverlay.addEventListener('click', function (e) {
-      if (e.target === lbOverlay) closeLightbox();
+      if (!e.target.closest('#lb-img, #lb-prev, #lb-next, #lb-caption')) {
+        closeLightbox();
+      }
     });
 
     // Keyboard: arrow keys and Escape

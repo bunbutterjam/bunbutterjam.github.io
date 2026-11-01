@@ -24,9 +24,9 @@
       '<div id="lb-inner">' +
         '<button id="lb-close" aria-label="Close">&#x2715;</button>' +
         '<div id="lb-img-row">' +
-          '<button id="lb-prev" aria-label="Previous">&#x2190;</button>' +
+          '<button id="lb-prev" aria-label="Previous">&#10094;</button>' +
           '<img id="lb-img" src="" alt="" />' +
-          '<button id="lb-next" aria-label="Next">&#x2192;</button>' +
+          '<button id="lb-next" aria-label="Next">&#10095;</button>' +
         '</div>' +
         '<p id="lb-caption"></p>' +
       '</div>';

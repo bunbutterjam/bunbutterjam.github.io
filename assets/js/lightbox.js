@@ -3,7 +3,7 @@ function is_youtubelink(url) {
     return (url.match(p)) ? RegExp.$1 : false;
 }
 function is_imagelink(url) {
-    var p = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i;
+    var p = /([a-z\-_0-9\/\:\.]*\.*(jpg|jpeg|png|gif|webp))/i;
     return (url.match(p)) ? true : false;
 }
 function is_vimeolink(url,el) {
@@ -42,8 +42,10 @@ function setGallery(el) {
     elements.forEach(element => {
         element.classList.remove('gallery');
 	});
-	if(el.closest('ul, p')) {
-		var link_elements = el.closest('ul, p').querySelectorAll("a[class*='lightbox-']");
+	// Look for a close parent first (ul, p), then fall back to the whole post section
+	var container = el.closest('ul, p') || el.closest('section.post') || el.closest('div.about-content') || document.body;
+	if(container) {
+		var link_elements = container.querySelectorAll("a[class*='lightbox-']");
 		link_elements.forEach(link_element => {
 			link_element.classList.remove('current');
 		});
